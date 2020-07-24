@@ -1,0 +1,1 @@
+ln -s ~/.asdf/shims/ruby /usr/bin/ruby

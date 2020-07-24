@@ -16,7 +16,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = code --wait
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -33,3 +33,11 @@
         default = simple
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[user]
+        name = Raúl Barroso
+	email = raulb@hey.com
+	signingkey = 23A6ADFAE1196871
