@@ -8,6 +8,7 @@ brew 'postgresql'
 brew 'starship'
 brew 'hyperkit'
 brew 'minikube'
+brew 'golang'
 cask 'httpie'
 cask 'keycastr'
 

@@ -20,7 +20,7 @@
 [apply]
         whitespace = nowarn
 [mergetool]
-        keepBackup = false
+	keepBackup = false
 [difftool]
         prompt = false
 [help]
@@ -38,6 +38,6 @@
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [user]
-        name = Raúl Barroso
+	name = raulb
 	email = raulb@hey.com
-	signingkey = 23A6ADFAE1196871
+	signingkey = 630160EA91E98B016D3C6C44C360FE9FCFF88BDF
