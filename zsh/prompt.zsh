@@ -73,6 +73,7 @@ set_prompt () {
   # Giving https://starship.rs/ a try. 
   # TODO: Remove existing existing prompt related stuff if I end up liking it
   eval "$(starship init zsh)"
+  eval "$(direnv hook zsh)"
 }
 
 precmd() {
