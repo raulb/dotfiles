@@ -42,6 +42,8 @@ unset config_files
 
 . $HOME/.asdf/asdf.sh
 
+# export GO111MODULE=on
+
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
 # autoload -U up-line-or-beginning-search
@@ -54,3 +56,9 @@ unset config_files
 # Autosuggestions (git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions)
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
+
+#### FIG ENV VARIABLES ####
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+

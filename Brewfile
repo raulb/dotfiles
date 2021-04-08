@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'meroxa/taps'
 
 brew 'libgit2'
 brew 'openssl'
@@ -9,6 +10,7 @@ brew 'starship'
 brew 'hyperkit'
 brew 'minikube'
 brew 'golang'
+brew 'meroxa'
 cask 'httpie'
 cask 'keycastr'
 

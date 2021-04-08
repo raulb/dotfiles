@@ -38,6 +38,6 @@
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [user]
-	name = raulb
+	name = Raúl Barroso
 	email = raulb@hey.com
 	signingkey = 630160EA91E98B016D3C6C44C360FE9FCFF88BDF
