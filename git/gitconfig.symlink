@@ -39,5 +39,5 @@
 	program = /usr/local/MacGPG2/bin/gpg2
 [user]
 	name = Raúl Barroso
-	email = raulb@hey.com
-	signingkey = 630160EA91E98B016D3C6C44C360FE9FCFF88BDF
+	email = ra.barroso@gmail.com
+	signingkey = 36C950ADE1E73406C62281DF46EE3B3EDE50644D

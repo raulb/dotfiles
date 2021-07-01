@@ -26,3 +26,4 @@ alias ge='git-edit-new'
 # New by @raulb
 alias gr='git pull --rebase --prune'
 alias gpf='git push --force-with-lease origin'
+alias gprune="git branch -vv | grep ': gone]'| grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -D"
