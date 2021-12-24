@@ -27,3 +27,11 @@ alias ge='git-edit-new'
 alias gr='git pull --rebase --prune'
 alias gpf='git push --force-with-lease origin'
 alias gprune="git branch -vv | grep ': gone]'| grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -D"
+
+
+# 🎩 @mamuso
+# In a folder full of repos, go into each one of them, pull the current branch and remove local branches already merged
+alias gupcl='for d in *; do push $d; git pull; gclear; popd; done'
+
+# Remove local branches already merged
+alias gclear=$'git fetch -p && for branch in `git for-each-ref --format \'%(refname) %(upstream:track)\' refs/heads | awk \'$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}\'`; do git branch -D $branch;done'
