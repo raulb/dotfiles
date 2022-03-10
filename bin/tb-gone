@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -ueo pipefail
+
+jq=$(command -v jq)
+meroxa=$(/Users/rb/code/meroxa/cli/meroxa)
+
+pipelineName=$1
+
+cli() {
+	meroxa "$@"
+}
+
+connectors() {
+	cli connectors list --json |\
+		jq -r ".[] | select(.pipeline_name == \"$pipelineName\") | .name"
+}
+
+functions() {
+	cli functions list --json |\
+		jq -r ".[] | select(.pipeline.name == \"$pipelineName\") | .name"
+}
+
+echo "Deleting functions..."
+for c in $(functions); do
+	cli functions rm -f $c
+done
+
+echo "Deleting connectors..."
+for c in $(connectors); do
+	cli connectors rm -f $c
+done
+
+echo "Deleting pipeline..."
+cli pipelines rm -f $pipelineName
+
+exit 0
