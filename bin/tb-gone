@@ -1,11 +1,9 @@
 #!/bin/bash
 
-set -ueo pipefail
-
 jq=$(command -v jq)
-meroxa=$(/Users/rb/code/meroxa/cli/meroxa)
+meroxa=$(command -v /Users/rb/code/meroxa/cli/meroxa)
 
-pipelineName=$1
+pipelineName="turbine-pipeline-$1"
 
 cli() {
 	meroxa "$@"
@@ -33,5 +31,8 @@ done
 
 echo "Deleting pipeline..."
 cli pipelines rm -f $pipelineName
+
+echo "Deleting app..."
+cli apps rm $1
 
 exit 0
