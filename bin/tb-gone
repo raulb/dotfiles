@@ -1,12 +1,12 @@
 #!/bin/bash
 
-jq=$(command -v jq)
-meroxa=$(command -v /Users/rb/code/meroxa/cli/meroxa)
+set -ueo pipefail
 
+jq=$(command -v jq)
 pipelineName="turbine-pipeline-$1"
 
 cli() {
-	meroxa "$@"
+	/Users/rb/code/meroxa/cli/meroxa "$@"
 }
 
 connectors() {
@@ -29,10 +29,10 @@ for c in $(connectors); do
 	cli connectors rm -f $c
 done
 
+echo "Deleting app..."
+cli apps rm $1 -f
+
 echo "Deleting pipeline..."
 cli pipelines rm -f $pipelineName
-
-echo "Deleting app..."
-cli apps rm $1
 
 exit 0
