@@ -41,3 +41,10 @@
 	name = Raúl Barroso
 	email = ra.barroso@gmail.com
 	signingkey = 36C950ADE1E73406C62281DF46EE3B3EDE50644D
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
