@@ -71,8 +71,6 @@ set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 
   # Giving https://starship.rs/ a try. 
-  # TODO: Remove existing existing prompt related stuff if I end up liking it
-  eval "$(starship init zsh)"
   eval "$(direnv hook zsh)"
 }
 
