@@ -40,7 +40,7 @@ done
 
 unset config_files
 
-. $HOME/.asdf/asdf.sh
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 # export GO111MODULE=on
 

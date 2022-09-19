@@ -1,2 +1,2 @@
-. $HOME/.asdf/asdf.sh
+. /usr/local/opt/asdf/libexec/asdf.sh
 autoload -Uz compinit && compinit
