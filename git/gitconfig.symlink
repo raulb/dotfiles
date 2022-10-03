@@ -40,7 +40,7 @@
 [user]
 	name = Raúl Barroso
 	email = ra.barroso@gmail.com
-	signingkey = CBB24E9401EABE08
+	signingkey = 96706169
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
