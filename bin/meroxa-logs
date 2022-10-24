@@ -1,0 +1,36 @@
+#!/bin/bash
+
+
+case $1 in
+faktory)
+		exec minikube kubectl --profile meroxa-control-plane -- logs -l 'app.kubernetes.io/name=faktory' -n faktory -f -c server
+	;;
+	fwork)
+		exec minikube kubectl --profile meroxa-control-plane -- logs -l 'app.kubernetes.io/name=meroxa-api' -n meroxa-api -f -c faktory-worker
+	;;
+	api)
+		exec minikube kubectl --profile meroxa-control-plane -- logs -l 'app.kubernetes.io/name=meroxa-api' -n meroxa-api -f -c api
+	;;
+	log)
+		exec minikube kubectl --profile meroxa-control-plane -- logs -l 'app.kubernetes.io/name=logan' -n logan -f
+	;;
+	wf)
+		exec minikube kubectl --profile meroxa-control-plane -- logs -l 'app.kubernetes.io/name=meroxa-api' -n meroxa-api -f -c workflow-worker
+	;;
+	worker)
+		exec minikube kubectl --profile meroxa-control-plane -- logs -l 'app.kubernetes.io/name=meroxa-api' -n meroxa-api -f -c worker
+	;;
+	connect)
+		exec minikube kubectl --profile meroxa-data-plane -- logs -l 'app.kubernetes.io/name=meroxa-kafka-connect' -n meroxa-kafka-connect -f -c meroxa-kafka-connect
+	;;
+	catalyst)
+		exec minikube kubectl --profile meroxa-data-plane -- logs -l 'app.kubernetes.io/name=catalyst' -n catalyst-system -f
+	;;
+	conduit)
+		exec minikube kubectl --profile meroxa-data-plane -- logs -l 'app.kubernetes.io/name=conduit-server' -n conduit -f
+	;;
+	*)
+		echo "not supported $1"
+	;;
+esac
+
