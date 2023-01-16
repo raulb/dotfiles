@@ -1,6 +1,4 @@
 # https://flutter.dev/
 
-if (( $+commands[flutter] ))
-then
-  export PATH="$PATH:/usr/local/bin/"
-fi
+export PATH="$PATH:/usr/local/bin/"
+export PATH="$PATH:$HOME/code/flutter/bin" # backup in case this was download manually

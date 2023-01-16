@@ -50,3 +50,5 @@
 	defaultBranch = main
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[diff]
+	submodule = log
