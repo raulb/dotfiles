@@ -1,0 +1,1 @@
+alias .c='$(go env GOPATH)/bin/conduit'
