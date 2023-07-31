@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 tap 'meroxa/taps'
+tap 'derailed/k9s'
 
 brew 'libgit2'
 brew 'openssl'
@@ -14,6 +15,7 @@ brew 'asdf'
 brew 'meroxa'
 cask 'httpie'
 cask 'keycastr'
+brew 'k9s'
 
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'
