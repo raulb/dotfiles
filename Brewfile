@@ -16,6 +16,7 @@ brew 'meroxa'
 cask 'httpie'
 cask 'keycastr'
 brew 'k9s'
+brew 'rtx'
 
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'
