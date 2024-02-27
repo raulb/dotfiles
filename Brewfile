@@ -17,6 +17,7 @@ cask 'httpie'
 cask 'keycastr'
 brew 'k9s'
 brew 'rtx'
+brew 'kind'
 
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'

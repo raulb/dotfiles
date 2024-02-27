@@ -27,6 +27,10 @@ alias ge='git-edit-new'
 alias gr='git pull --rebase --prune'
 alias gpf='git push --force-with-lease origin'
 alias gprune="git branch -vv | grep ': gone]'| grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -D"
+alias gaa="git add ."
+alias grc="git rebase --continue"
+alias garc="git add . && git rebase --continue"
+alias gri="git rebase -i HEAD~"
 
 
 # 🎩 @mamuso

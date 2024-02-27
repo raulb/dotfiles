@@ -2,4 +2,4 @@ alias reload!='. ~/.zshrc'
 
 alias cls='clear' # Good 'ol Clear Screen command
 
-alias gh='github'
+alias gg='github'
