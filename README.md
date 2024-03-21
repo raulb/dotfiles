@@ -1,4 +1,4 @@
-# holman does dotfiles
+# raul dotfiles
 
 Your dotfiles are how you personalize your system. These are mine.
 
@@ -50,7 +50,7 @@ There's a few special files in the hierarchy.
 Run this:
 
 ```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
+git clone https://github.com/raulb/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
