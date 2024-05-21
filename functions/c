@@ -13,4 +13,26 @@
 #
 # ...to quickly jump into holman/boom, for example.
 
-cd "$PROJECTS/$1"
+case "$1" in
+  "dotfiles")
+    cd ~/.dotfiles
+    ;;
+  "ccommons")
+    cd ~/code/conduitio/conduit-commons
+    ;;
+  "csdk")
+    cd ~/code/conduitio/conduit-connector-sdk
+    ;;
+  "csite")
+    cd ~/code/conduitio/conduit-site
+    ;;
+  "c")
+    cd ~/code/conduitio/conduit
+    ;;
+  "hclm")
+    cd ~/code/hclm/hclm-mobile
+    ;;
+  *)
+    cd "$PROJECTS/$1"
+    ;;
+esac
