@@ -14,9 +14,18 @@
 # ...to quickly jump into holman/boom, for example.
 
 case "$1" in
+  "clabs")
+    cd ~/code/conduitio-labs
+    ;;
   "dotfiles")
     cd ~/.dotfiles
     ;;
+  "coperator")
+    cd ~/code/conduitio-labs/conduit-operator
+    ;;  
+  "cprotocol")
+    cd ~/code/conduitio/conduit-connector-protocol
+    ;;    
   "ccommons")
     cd ~/code/conduitio/conduit-commons
     ;;
@@ -26,7 +35,7 @@ case "$1" in
   "csite")
     cd ~/code/conduitio/conduit-site
     ;;
-  "c")
+  "conduit")
     cd ~/code/conduitio/conduit
     ;;
   "hclm")
