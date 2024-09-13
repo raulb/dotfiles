@@ -31,6 +31,7 @@ alias gaa="git add ."
 alias grc="git rebase --continue"
 alias garc="git add . && git rebase --continue"
 alias gri="git rebase -i HEAD~"
+alias gfo="git fetch origin"
 
 
 # 🎩 @mamuso
