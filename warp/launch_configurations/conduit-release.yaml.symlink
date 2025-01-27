@@ -29,16 +29,16 @@ windows:
         layout:
           split_direction: horizontal
           panes:
-            - cwd: /Users/rb/code/conduitio/conduit
-            - cwd: /Users/rb/code/conduitio/conduit-commons
-            - cwd: /Users/rb/code/conduitio/conduit-connector-protocol
-            - cwd: /Users/rb/code/conduitio/conduit-connector-sdk
-            - cwd: /Users/rb/code/conduitio/conduit-processor-sdk
-            - cwd: /Users/rb/code/conduitio/conduit-schema-registry
-            - cwd: /Users/rb/code/conduitio/conduit-connector-template
-            - cwd: /Users/rb/code/conduitio/conduit-connector-file
-            - cwd: /Users/rb/code/conduitio/conduit-connector-kafka
-            - cwd: /Users/rb/code/conduitio/conduit-connector-generator
-            - cwd: /Users/rb/code/conduitio/conduit-connector-s3
-            - cwd: /Users/rb/code/conduitio/conduit-connector-postgres
-            - cwd: /Users/rb/code/conduitio/conduit-connector-log
+            - cwd: /Users/raulbarroso/code/conduitio/conduit
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-commons
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-protocol
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-sdk
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-processor-sdk
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-schema-registry
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-template
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-file
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-kafka
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-generator
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-s3
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-postgres
+            - cwd: /Users/raulbarroso/code/conduitio/conduit-connector-log

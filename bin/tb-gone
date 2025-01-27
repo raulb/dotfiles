@@ -6,7 +6,7 @@ jq=$(command -v jq)
 pipelineName="turbine-pipeline-$1"
 
 cli() {
-	/Users/rb/code/meroxa/cli/meroxa "$@"
+	/Users/raulbarroso/code/meroxa/cli/meroxa "$@"
 }
 
 connectors() {
