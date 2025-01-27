@@ -1,1 +1,0 @@
-fpath=(~/.meroxa/completions $fpath)

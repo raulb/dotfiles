@@ -11,7 +11,7 @@
 #
 #    c holm<tab>/bo<tab>
 #
-# ...to quickly jump into holman/boom, for example.
+# ...to quickly jump into raulb/boom, for example.
 
 case "$1" in
   "clabs")
