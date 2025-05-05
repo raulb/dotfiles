@@ -16,6 +16,7 @@ cask 'keycastr'
 brew 'k9s'
 brew 'kind'
 brew 'jq'
+brew 'graphviz'
 
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'

@@ -34,13 +34,13 @@
 [credential]
 	helper = osxkeychain
 [commit]
-	gpgsign = true
+	gpgSign = true
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+	program = /opt/homebrew/bin/gpg
 [user]
 	name = Raúl Barroso
-	email = ra.barroso@gmail.com
-	signingkey = CB04E4F3
+	email = code@raulb.dev
+	signingkey = 559EED94D52458BD
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

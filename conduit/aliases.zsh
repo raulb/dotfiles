@@ -1,1 +1,1 @@
-alias .c='$(go env GOPATH)/bin/conduit'
+alias .c='go run ./cmd/conduit/main.go'
