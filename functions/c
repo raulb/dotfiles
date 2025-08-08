@@ -14,29 +14,8 @@
 # ...to quickly jump into raulb/boom, for example.
 
 case "$1" in
-  "clabs")
-    cd ~/code/conduitio-labs
-    ;;
   "dotfiles")
     cd ~/.dotfiles
-    ;;
-  "coperator")
-    cd ~/code/conduitio-labs/conduit-operator
-    ;;  
-  "cprotocol")
-    cd ~/code/conduitio/conduit-connector-protocol
-    ;;    
-  "ccommons")
-    cd ~/code/conduitio/conduit-commons
-    ;;
-  "csdk")
-    cd ~/code/conduitio/conduit-connector-sdk
-    ;;
-  "csite")
-    cd ~/code/conduitio/conduit-site
-    ;;
-  "conduit")
-    cd ~/code/conduitio/conduit
     ;;
   "hclm")
     cd ~/code/hclm/hclm-mobile

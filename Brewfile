@@ -1,7 +1,6 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
-tap 'meroxa/taps'
 tap 'derailed/k9s'
 
 brew 'libgit2'

@@ -53,16 +53,16 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 eval "$(direnv hook zsh)"
 
-eval "$(/Users/raulbarroso/.local/bin/mise activate zsh)"
+eval "$(/Users/rb/.local/bin/mise activate zsh)"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-eval "$(/Users/raulbarroso/.local/bin/mise activate zsh)"
+eval "$(/Users/rb/.local/bin/mise activate zsh)"
 export PATH="$HOME/go/bin:$PATH"
 
 # Added by Windsurf
-export PATH="/Users/raulbarroso/.codeium/windsurf/bin:$PATH"
+export PATH="/Users/rb/.codeium/windsurf/bin:$PATH"
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/raulbarroso/.lmstudio/bin"
+export PATH="$PATH:/Users/rb/.lmstudio/bin"
 # End of LM Studio CLI section

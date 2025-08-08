@@ -37,11 +37,11 @@
 	gpgSign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
+	format = ssh
 [user]
 	name = Raúl Barroso
 	email = code@raulb.dev
-	signingkey = 559EED94D52458BD
-[filter "lfs"]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKj7ARLHgkUWOMKznnmMCcU1YRSALUZop7ArdXYLTIVf
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -52,3 +52,5 @@
 	insteadOf = https://github.com/
 [diff]
 	submodule = log
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
