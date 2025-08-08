@@ -1,0 +1,1 @@
+alias pnd="pnpm run dev"
