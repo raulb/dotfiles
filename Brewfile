@@ -16,6 +16,7 @@ brew 'k9s'
 brew 'kind'
 brew 'jq'
 brew 'graphviz'
+brew 'lazygit'
 
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'

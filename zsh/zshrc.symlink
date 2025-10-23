@@ -71,3 +71,4 @@ export PATH="$PATH:/Users/rb/.lmstudio/bin"
 export PATH="$PATH:/Users/raulbarroso/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH="$HOME/.local/bin:$PATH"
