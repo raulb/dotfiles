@@ -1,0 +1,1 @@
+export PATH="/Users/rb/.bun/bin:$PATH"

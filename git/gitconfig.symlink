@@ -15,7 +15,7 @@
         branch = auto
         ui = true
 [core]
-        excludesfile = ~/.gitignore
+	excludesfile = /Users/rb/.gitignore_global
         editor = code --wait
 [apply]
         whitespace = nowarn
@@ -59,3 +59,6 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[safe]
+	directory = /Users/rb/code/supabase/platform
+	directory = /Users/rb/code/supabase/*

@@ -71,4 +71,17 @@ export PATH="$PATH:/Users/rb/.lmstudio/bin"
 export PATH="$PATH:/Users/raulbarroso/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH="/Library/TeX/texbin:$PATH"
+
 export PATH="$HOME/.local/bin:$PATH"
+# pnpm
+export PNPM_HOME="/Users/rb/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
